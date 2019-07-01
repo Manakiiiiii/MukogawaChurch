@@ -1,0 +1,69 @@
+.service {
+
+
+
+    &__wrapper {
+
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+
+
+        @extend .activity__title;
+
+
+    }
+
+
+    &__link {
+        display: block;
+        transform: .3s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__group {
+
+        display: flex;
+        align-items: flex-start;
+    }
+
+
+    &__group__item {
+        width: 33.9%;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+
+
+    }
+
+
+    &__img {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    &__sub-title {
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 20px;
+        color: #676770;
+        color: white;
+        color: red;
+    }
+
+
+
+    &__time {
+        color: red;
+
+
+    }
+
+
+}

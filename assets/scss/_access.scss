@@ -1,0 +1,69 @@
+.access {
+
+
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+
+    &__title {
+
+        @extend .activity__title;
+    }
+
+
+    &__wrapper {
+
+        max-width: $MAX_WIDTH;
+        margin: 0 auto;
+
+    }
+
+
+    &__contents {
+        width: 100%;
+    }
+
+
+    &__content {
+        width: 100%;
+        text-align: center;
+
+        margin-bottom: 20px;
+
+        &:nth-child(2) {
+            height: 400px;
+            padding: 0 50px;
+        }
+    }
+
+
+    &__address {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #1c1719;
+        padding-bottom: 10px;
+
+    }
+
+    &__service-time {
+        font-style: normal;
+        font-size: 2rem;
+        line-height: 32px;
+        color: #1f1f1f;
+        margin-bottom: 32px;
+
+    }
+
+
+    &__contact-info {}
+
+
+
+
+
+
+
+}

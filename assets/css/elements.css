@@ -1,0 +1,23 @@
+.btn {
+  width: 180px;
+  padding: 5px 0;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.heading-line::after {
+  display: block;
+  content: "";
+}
+/*# sourceMappingURL=elements.css.map */

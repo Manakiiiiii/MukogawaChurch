@@ -1,0 +1,53 @@
+//btn 
+
+.btn {
+
+    width: 180px;
+    padding: 5px 0;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    transition: .5s;
+
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+
+
+
+}
+
+
+
+//heading
+
+.heading-line {
+    margin-bottom: 40px;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 300px;
+        height: 3px;
+        background-color: $MAIN_COLOR;
+        margin: 0 auto;
+        margin-top: 1px;
+    }
+}
+
+.title {
+    padding-bottom: 100px;
+}
+
+
+.shadow {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hidden {
+    display: none;
+}
