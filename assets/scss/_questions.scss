@@ -1,0 +1,130 @@
+.questions {
+
+    padding: 30px;
+    margin-bottom: 100px;
+
+    &__wrapper {
+        max-width: $MAX_WIDTH;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+
+    &__title {
+        @extend .service__title;
+
+    }
+
+    &__question--guest {
+        width: 100%;
+
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+
+    &__content {}
+
+    &__question--pastor {
+
+        @extend .questions__question--guest;
+
+    }
+
+
+
+    &__img {
+        border-radius: 50%;
+
+    }
+
+    &__icon {
+
+        width: 10%;
+
+
+
+    }
+
+
+    &__name {
+        text-align: center;
+    }
+
+    &__msg--l {
+        width: 85%;
+        padding: 3%;
+        background-color: $MAIN_COLOR;
+        position: relative;
+        border: 40px;
+        margin-bottom: 100px;
+        text-align: left;
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-left: 8px solid #eee;
+            border-bottom: 8px solid transparent;
+            border-top: 8px solid transparent;
+            border-left-color: $MAIN_COLOR;
+            top: 10px;
+            right: -8.5px;
+
+
+        }
+
+
+
+    }
+
+
+    &__msg--r {
+        width: 85%;
+        padding: 3%;
+        background-color: $MAIN_COLOR;
+        position: relative;
+        border: 40px;
+        text-align: left;
+        margin-bottom: 100px;
+
+
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-right: 8px solid #eee;
+            border-bottom: 8px solid transparent;
+            border-top: 8px solid transparent;
+            border-right-color: $MAIN_COLOR;
+            top: 10px;
+            left: -8px;
+
+
+        }
+    }
+
+
+    &__txt {
+        font-size: 2rem;
+        line-height: 1.7;
+        color: white;
+    }
+
+
+
+    &__btn {
+        @extend .happening__btn;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+
+}
+
+.cb {
+    clear: both;
+}

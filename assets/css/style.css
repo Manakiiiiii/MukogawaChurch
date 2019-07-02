@@ -198,6 +198,10 @@ li {
 .header {
   background-color: #0597F2;
   padding: 5px 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
 }
 
 .header__wrapper {
@@ -249,7 +253,7 @@ li {
 }
 
 .header__globalNav__link:hover::after {
-  background-color: red;
+  background-color: white;
   opacity: 1;
 }
 
@@ -264,6 +268,7 @@ li {
 
 /* Header-hero */
 .header-hero {
+  margin-top: 57px;
   position: relative;
   background-color: black;
   height: 485px;
@@ -381,6 +386,18 @@ li {
   display: none;
 }
 
+.c-left {
+  float: left;
+}
+
+.c-right {
+  float: right;
+}
+
+.mg-c {
+  margin: 0 !important;
+}
+
 .happening {
   padding-bottom: 100px;
 }
@@ -448,13 +465,13 @@ li {
   line-height: 20px;
 }
 
-.happening__btn, .activity__btn {
+.happening__btn, .activity__btn, .questions__btn {
   margin-top: 35px;
   background-color: #0597F2;
   padding: 2px 0;
 }
 
-.happening__btn:hover, .activity__btn:hover {
+.happening__btn:hover, .activity__btn:hover, .questions__btn:hover {
   border: 2px solid #0597F2;
 }
 
@@ -465,7 +482,7 @@ li {
 
 .welcome__contents {
   width: 100%;
-  background-image: url("../img/welcome.jpg");
+  background-image: url("/assets/img/welcome.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -474,7 +491,7 @@ li {
 
 .welcome__content {
   width: 50%;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   color: #676770;
   display: inline-block;
@@ -482,7 +499,7 @@ li {
   position: relative;
 }
 
-.welcome__title, .activity__title, .happening__title, .access__title, .service__title {
+.welcome__title, .activity__title, .happening__title, .access__title, .service__title, .questions__title {
   text-align: center;
   font-size: 3.7rem;
   font-weight: 400;
@@ -606,7 +623,7 @@ li {
   text-align: center;
 }
 
-.activity__title, .happening__title, .access__title, .service__title {
+.activity__title, .happening__title, .access__title, .service__title, .questions__title {
   text-align: center;
 }
 
@@ -728,5 +745,95 @@ li {
 .activity__link {
   display: block;
   color: inherit;
+}
+
+.questions {
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+.questions__wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.questions__question--guest, .questions__question--pastor {
+  width: 100%;
+}
+
+.questions__question--guest:after, .questions__question--pastor:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.questions__img {
+  border-radius: 50%;
+}
+
+.questions__icon {
+  width: 10%;
+}
+
+.questions__name {
+  text-align: center;
+}
+
+.questions__msg--l {
+  width: 85%;
+  padding: 3%;
+  background-color: #0597F2;
+  position: relative;
+  border: 40px;
+  margin-bottom: 100px;
+  text-align: left;
+}
+
+.questions__msg--l::after {
+  content: '';
+  position: absolute;
+  border-left: 8px solid #eee;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-left-color: #0597F2;
+  top: 10px;
+  right: -8.5px;
+}
+
+.questions__msg--r {
+  width: 85%;
+  padding: 3%;
+  background-color: #0597F2;
+  position: relative;
+  border: 40px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.questions__msg--r::after {
+  content: '';
+  position: absolute;
+  border-right: 8px solid #eee;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right-color: #0597F2;
+  top: 10px;
+  left: -8px;
+}
+
+.questions__txt {
+  font-size: 2rem;
+  line-height: 1.7;
+  color: white;
+}
+
+.questions__btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cb {
+  clear: both;
 }
 /*# sourceMappingURL=style.css.map */

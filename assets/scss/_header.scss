@@ -1,6 +1,10 @@
 .header {
     background-color: $MAIN_COLOR;
     padding: 5px 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
 
     &__wrapper {
         max-width: 100%;
@@ -47,7 +51,7 @@
         }
 
         &:hover::after {
-            background-color: red;
+            background-color: white;
             opacity: 1;
 
         }
@@ -67,7 +71,7 @@
 
 /* Header-hero */
 .header-hero {
-
+    margin-top: 57px;
     position: relative;
     background-color: black;
     height: 485px;
