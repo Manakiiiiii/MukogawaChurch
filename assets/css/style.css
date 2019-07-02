@@ -482,7 +482,7 @@ li {
 
 .welcome__contents {
   width: 100%;
-  background-image: url("../assets/img/welcome.jpg");
+  background-image: url("../img/welcome.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
