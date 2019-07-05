@@ -1,6 +1,6 @@
 .questions {
 
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     margin-bottom: 100px;
 
     &__wrapper {
@@ -9,6 +9,7 @@
         text-align: center;
 
     }
+
 
 
     &__title {
@@ -26,7 +27,6 @@
         }
     }
 
-    &__content {}
 
     &__question--pastor {
 
@@ -52,6 +52,9 @@
 
     &__name {
         text-align: center;
+        margin-top: 5px;
+        font-size: 1.2rem;
+        font-weight: 300;
     }
 
     &__msg--l {
