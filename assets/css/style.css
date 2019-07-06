@@ -89,6 +89,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
 }
 
 *,
