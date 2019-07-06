@@ -37,10 +37,17 @@
         margin-bottom: 40px;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
 
-
+        @include mq(xl) {
+            width: 300px;
+        }
 
         &:nth-child(odd) {
             margin-right: 40px;
+
+            @include mq(xl) {
+                margin-right: 20px;
+            }
+
         }
 
 
