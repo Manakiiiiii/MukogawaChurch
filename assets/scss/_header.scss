@@ -51,9 +51,11 @@
             margin-right: 15px;
         }
 
+
         @include mq(md) {
             color: red;
         }
+
 
         &::after {
             margin-top: 10px;
@@ -64,6 +66,9 @@
             width: 100%;
             opacity: 0;
 
+            @include mq(xl) {
+                margin-top: 4px;
+            }
         }
 
         &:hover::after {

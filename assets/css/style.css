@@ -89,8 +89,6 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-
 }
 
 *,
@@ -233,6 +231,12 @@ li {
   padding-bottom: 100px;
 }
 
+@media screen and (max-width: 1199px) {
+  .title {
+    padding-bottom: 60px;
+  }
+}
+
 .shadow {
   -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
@@ -315,7 +319,7 @@ li {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 795px) {
   .header__globalNav__link {
     color: red;
   }
@@ -329,6 +333,12 @@ li {
   height: 4px;
   width: 100%;
   opacity: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .header__globalNav__link::after {
+    margin-top: 4px;
+  }
 }
 
 .header__globalNav__link:hover::after {
@@ -612,6 +622,12 @@ li {
   letter-spacing: 3px;
 }
 
+@media screen and (max-width: 1199px) {
+  .welcome__title, .activity__title, .happening__title, .access__title, .service__title, .questions__title {
+    font-size: 3rem;
+  }
+}
+
 .welcome__text {
   font-family: dnp-shuei-gothic-kin-std, sans-serif;
   font-size: 2.5rem;
@@ -702,17 +718,12 @@ li {
           align-items: flex-start;
 }
 
-@media screen and (max-width: 1199px) {
-  .service__group {
-    display: block;
-  }
-}
-
 .service__group__item {
   width: 33.9%;
   text-align: center;
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1199px) {
@@ -722,12 +733,21 @@ li {
   }
 }
 
+.service__img {
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.service__img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 @media screen and (max-width: 1199px) {
   .service__img {
     width: 100%;
-    height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
     overflow: hidden;
   }
 }
@@ -891,8 +911,9 @@ li {
 }
 
 .questions {
-  padding: 30px 30px 0 30px;
-  margin-bottom: 100px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .questions__wrapper {
@@ -903,6 +924,12 @@ li {
 
 .questions__question--guest, .questions__question--pastor {
   width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .questions__question--guest, .questions__question--pastor {
+    padding: 0 8%;
+  }
 }
 
 .questions__question--guest:after, .questions__question--pastor:after {
@@ -944,7 +971,7 @@ li {
   border-top: 8px solid transparent;
   border-left-color: #0597F2;
   top: 10px;
-  right: -8.5px;
+  right: -8px;
 }
 
 .questions__msg--r {
@@ -972,6 +999,12 @@ li {
   font-size: 2rem;
   line-height: 1.7;
   color: white;
+}
+
+@media screen and (max-width: 1199px) {
+  .questions__txt {
+    font-size: 1.7rem;
+  }
 }
 
 .questions__btn {

@@ -40,7 +40,14 @@
 }
 
 .title {
-    padding-bottom: 100px;
+    padding-bottom: $SECTION_SPACE;
+
+
+    @include mq(xl) {
+        padding-bottom: 60px;
+    }
+
+
 }
 
 

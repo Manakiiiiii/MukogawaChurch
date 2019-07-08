@@ -1,7 +1,8 @@
 .questions {
 
-    padding: 30px 30px 0 30px;
-    margin-bottom: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     &__wrapper {
         max-width: $MAX_WIDTH;
@@ -20,6 +21,10 @@
     &__question--guest {
         width: 100%;
 
+        @include mq(xl) {
+            padding: 0 8%;
+        }
+
         &:after {
             content: "";
             display: block;
@@ -31,6 +36,7 @@
     &__question--pastor {
 
         @extend .questions__question--guest;
+
 
     }
 
@@ -74,7 +80,10 @@
             border-top: 8px solid transparent;
             border-left-color: $MAIN_COLOR;
             top: 10px;
-            right: -8.5px;
+            right: -8px;
+
+
+
 
 
         }
@@ -115,6 +124,12 @@
         font-size: 2rem;
         line-height: 1.7;
         color: white;
+
+        @include mq(xl) {
+
+            font-size: 1.7rem;
+
+        }
     }
 
 
