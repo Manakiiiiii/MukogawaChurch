@@ -8,6 +8,11 @@
         max-width: $MAX_WIDTH;
         margin: 0 auto;
         text-align: center;
+
+        @include mq(md) {
+            max-width: 100%;
+        }
+
     }
 
 
@@ -25,6 +30,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
+
+
+
 
     }
 
@@ -46,6 +55,10 @@
 
             @include mq(xl) {
                 margin-right: 20px;
+            }
+
+            @include mq(md) {
+                margin-right: 0;
             }
 
         }

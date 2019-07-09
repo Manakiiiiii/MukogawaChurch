@@ -69,6 +69,7 @@
 
     &__globalNav {
         display: flex;
+        padding: 4px;
 
         @include mq(md) {
             margin: 0 auto 2px auto;

@@ -1,13 +1,13 @@
 .welcome {
 
     &__wrapper {
-
         max-width: 100%;
         margin: 0 auto;
     }
 
 
     &__contents {
+
         width: 100%;
         background-image: url("../img/welcome.jpg");
         background-position: center;
@@ -16,9 +16,9 @@
         text-align: right;
 
         @include mq(xl) {
-
             background-size: cover;
         }
+
 
     }
 
@@ -33,9 +33,12 @@
 
 
         @include mq(xl) {
-            height: 300px;
+            height: 200px;
         }
 
+        @include mq(md) {
+            text-align: center;
+        }
     }
 
     &__title {
@@ -48,10 +51,11 @@
         letter-spacing: 3px;
 
         @include mq(xl) {
-
             font-size: 3rem;
-
         }
+
+
+
     }
 
     &__text {
@@ -68,10 +72,22 @@
         margin: 30px 70px;
 
         @include mq(xl) {
-
             font-size: 1.8rem;
             margin: 40px 10px 40px 30px;
             padding: .5% 2%;
+
+        }
+
+
+        @include mq(md) {
+
+            font-size: 1.3rem;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 9px;
         }
 
     }

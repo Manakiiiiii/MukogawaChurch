@@ -102,9 +102,6 @@
         text-align: left;
         margin-bottom: 100px;
 
-
-
-
         &::after {
             content: '';
             position: absolute;
@@ -114,8 +111,6 @@
             border-right-color: $MAIN_COLOR;
             top: 10px;
             left: -8px;
-
-
         }
     }
 
