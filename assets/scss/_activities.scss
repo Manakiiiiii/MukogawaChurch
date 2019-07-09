@@ -1,5 +1,4 @@
 .activity {
-
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -36,6 +35,7 @@
         background-color: white;
         margin-bottom: 40px;
         box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
 
         @include mq(xl) {
             width: 300px;
@@ -116,26 +116,12 @@
             }
 
         }
-
-
-        //
-
-
-
-
-
-
-
-
-
-
     }
 
     &__img {
         border-radius: 5px 5px 0 0;
         max-width: 100%;
-        width: 100%;
-        object-fit: cover;
+
     }
 
     &__sub-title {
@@ -152,8 +138,6 @@
             width: 100%;
             height: 5px;
             margin-top: 10px;
-
-
         }
 
     }
@@ -189,11 +173,8 @@
 
 
     &__link {
-
-
         display: block;
         color: inherit;
-
     }
 
 
