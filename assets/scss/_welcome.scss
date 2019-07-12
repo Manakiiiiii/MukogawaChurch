@@ -33,10 +33,11 @@
 
 
         @include mq(xl) {
-            height: 200px;
+            height: 300px;
         }
 
         @include mq(md) {
+            height: 200px;
             text-align: center;
         }
     }
@@ -53,7 +54,6 @@
         @include mq(xl) {
             font-size: 3rem;
         }
-
 
 
     }

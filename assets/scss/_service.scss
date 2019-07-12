@@ -27,9 +27,11 @@
         display: flex;
         align-items: flex-start;
 
-        @include mq(md) {
-            flex-direction: column;
+
+        @include mq(sm) {
+            display: block;
         }
+
 
     }
 
@@ -41,7 +43,7 @@
         display: inline-block;
         overflow: hidden;
 
-        @include mq(md) {
+        @include mq(sm) {
             width: 100%;
         }
 

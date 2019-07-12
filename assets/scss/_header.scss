@@ -6,6 +6,12 @@
     z-index: 3;
     top: 0;
 
+
+    @include mq(lg) {
+        padding: 5px 10px;
+    }
+
+
     @include mq(md) {
         padding: 5px 0;
         position: relative;

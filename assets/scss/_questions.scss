@@ -4,11 +4,20 @@
     padding-left: 30px;
     padding-right: 30px;
 
+    @include mq(sm) {
+        padding: 0 20px;
+    }
+
     &__wrapper {
         max-width: $MAX_WIDTH;
         margin: 0 auto;
         text-align: center;
 
+
+        @include mq(sm) {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
 
@@ -23,6 +32,10 @@
 
         @include mq(xl) {
             padding: 0 8%;
+        }
+
+        @include mq(sm) {
+            padding: 0;
         }
 
         &:after {
@@ -51,6 +64,10 @@
 
         width: 10%;
 
+        @include mq(sm) {
+            width: 15%;
+        }
+
 
 
     }
@@ -71,6 +88,11 @@
         border: 40px;
         margin-bottom: 100px;
         text-align: left;
+
+        @include mq(sm) {
+            width: 80%;
+        }
+
 
         &::after {
             content: '';
@@ -102,6 +124,11 @@
         text-align: left;
         margin-bottom: 100px;
 
+        @include mq(sm) {
+            width: 80%;
+            padding: 2%;
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -121,9 +148,11 @@
         color: white;
 
         @include mq(xl) {
-
             font-size: 1.7rem;
+        }
 
+        @include mq(sm) {
+            font-size: 1.4rem;
         }
     }
 

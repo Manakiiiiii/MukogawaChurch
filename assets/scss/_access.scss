@@ -8,6 +8,14 @@
     font-style: normal;
     font-weight: 100;
 
+    @include mq(sm) {
+
+        padding-left: 0;
+        padding-right: 0;
+
+
+    }
+
     &__title {
         @extend .activity__title;
     }
@@ -31,12 +39,17 @@
     &__content {
         width: 100%;
         text-align: center;
-
         margin-bottom: 20px;
 
         &:nth-child(2) {
             height: 400px;
             padding: 0 50px;
+
+            @include mq(sm) {
+                padding: 0;
+                height: 250px;
+
+            }
         }
     }
 
@@ -45,7 +58,12 @@
         font-size: 1.6rem;
         line-height: 1.5;
         color: #1c1719;
+
         margin-bottom: 5px;
+
+        @include mq(sm) {
+            font-size: 1.2rem;
+        }
     }
 
     &__service-time {
@@ -57,14 +75,14 @@
 
 
 
-
+        @include mq(sm) {
+            font-size: 1.6rem;
+        }
 
 
 
     }
 
-
-    &__contact-info {}
 
 
 
